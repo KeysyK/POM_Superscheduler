@@ -36,6 +36,12 @@ public class LoginScreen extends BaseScreen {
         loginButton.click();
         return new HomeScreen(driver);
     }
+    public WizardScreen submitReg() {
+        driver.hideKeyboard();
+        loginButton.click();
+        return new WizardScreen(driver);
+    }
+
 
     public HomeScreen complexLogin(){
         Auth auth = new Auth().withEmail("arielle@gmail.com").withPassword("Arielle12345$");
