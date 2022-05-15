@@ -14,12 +14,12 @@ public class WizardScreen extends BaseScreen{
     MobileElement skipButton;
 
     public HomeScreen skipWizard(){
-        should(skipButton,15);
+        should(skipButton,25);
         skipButton.click();
         return new HomeScreen(driver);
     }
 
-    public HomeScreen skipIfWizard(){
+    public HomeScreen skipIfWizard() {
         if(skipButton.isDisplayed()){
             skipButton.click();
         }

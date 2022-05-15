@@ -35,7 +35,7 @@ public class HomeScreen extends BaseScreen{
     }
 
     public HomeScreen checkFabButtonPresent(){
-        should(fabAdd,15);
+        should(fabAdd,25);
         Assert.assertTrue(fabAdd.isDisplayed());
         return this;
     }
